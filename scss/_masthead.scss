@@ -1,0 +1,95 @@
+// Styling for the masthead
+header.masthead {
+  text-align: center;
+  color: white;
+  background-image: url("../img/wood_bg_dark.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  @include background-cover;
+  .intro-text {
+    padding-top: 150px;
+    padding-bottom: 50px;
+    .intro-lead-in {
+      font-size: 22px;
+      font-style: italic;
+      line-height: 22px;
+      margin-bottom: 25px;
+      @include serif-font;
+    }
+    .intro-heading {
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 50px;
+      margin-bottom: 25px;
+      @include heading-font;
+    }
+  }
+}
+.logo {
+  height: 80px;
+}
+.h_logo {
+  height: 250px;
+}
+.title-small {
+  font-size: 40px;
+  line-height: 45px;
+  margin-bottom: 0;
+  margin-top: 20px;
+  font-weight: 300;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+.title {
+  font-size: 60px;
+  margin-bottom: 50px;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+@media(min-width:768px) {
+  header.masthead {
+    .intro-text {
+      padding-top: 170px;
+      padding-bottom: 50px;
+      .intro-lead-in {
+        font-size: 40px;
+        font-style: italic;
+        line-height: 40px;
+        margin-bottom: 25px;
+        @include serif-font;
+      }
+      .intro-heading {
+        font-size: 75px;
+        font-weight: 700;
+        line-height: 75px;
+        margin-bottom: 50px;
+        @include heading-font;
+      }
+    }
+  }
+}
+ul.top-social {
+  margin-bottom: 0;
+  li {
+    a {
+      font-size: 30px;
+      line-height: 45px;
+      display: block;
+      width: 50px;
+      height: 50px;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+      color: white;
+      border-radius: 100%;
+      outline: none;
+      //background-color: $gray-900;
+      border: 2px solid white;
+      &:active,
+      &:focus,
+      &:hover {
+        background-color: $primary;
+        border: 2px solid $primary;
+      }
+    }
+  }
+}
